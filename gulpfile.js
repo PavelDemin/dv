@@ -23,22 +23,22 @@ var path = {
     },
     src: {
        // html:  'src/*.html',
-        pug:  'src/**/*.pug',
+        pug:  'src/pug/**/*.pug',
         js:    'src/assets/js/main.js',
         scss: 'src/assets/scss/main.scss',
         css: 'src/assets/css/*.css',
         img:   'src/assets/image/*.*',
-        libs:  'src/assets/libs/',
+        libs:  'src/assets/libs/**/*.*',
         fonts: 'src/assets/fonts/**/*.*'
     },
     watch: {
        // html:  'src/*.html',
-        pug:  'src/**/*.pug',
+        pug:  'src/pug/**/*.pug',
         js:    'src/assets/js/main.js',
         scss: 'src/assets/scss/**/*.scss',
         css: 'src/assets/css/*.css',
         img:   'src/assets/image/*.*',
-        libs:  'src/assets/libs/',
+        libs:  'src/assets/libs/**/*.*',
         fonts: 'src/assets/fonts/**/*.*'
     },
     clean:     './build'

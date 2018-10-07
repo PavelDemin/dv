@@ -1,0 +1,57 @@
+.container-fluid.wrapper
+    header.row
+        .col-12.composition
+            .container
+                .row.header
+                    .col-md.logo.header__item
+                        span.logo__image
+                            img(src="../assets/image/logo.png")
+                        span.logo__title Рыбалка в Хабаровском крае
+                    .col-md.social.header__item
+                        .social__item
+                            a(href="#").social__link
+                                i.icon-vkontakte
+                        .social__item
+                            a(href="#").social__link
+                                i.icon-whatsapp
+                    .col-md.header__item
+                        form(action="#" method="POST").search
+                            input(type="text" id="search-text" name="search-text" placeholder="Поиск по сайту").search__input
+                            button(type="submit").search__btn
+    .row
+        .col-12.nav-wrap
+            .container
+                .row
+                    .col-md-4.offset-md-8.nav
+                        span.nav__welcome Здравствуйте,
+                        span.nav__user &nbsp;Гость!
+                        a(href="#").nav__log Вход
+                        a(href="#").nav__log Регистрация
+    .row
+        .col-12.menu-wrap
+            .container
+                .row
+                    .col-12.menu.menu_top
+                        ul.menu__list.menu__list_list
+                            li.menu__item
+                                a(href="#").menu__link Главная
+                            li.menu__item
+                                a(href="#").menu__link Рыболовные отчеты
+                            li.menu__item
+                                a(href="#").menu__link Статьи
+                                ul.menu__list.menu__list_down
+                                    li.menu__item
+                                        a(href="#").menu__link Главная
+                                    li.menu__item
+                                        a(href="#").menu__link Рыболовные отчеты
+                                    li.menu__item
+                                        a(href="#").menu__link Статьи
+                            li.menu__item
+                                a(href="#").menu__link Видео
+                            li.menu__item
+                                a(href="#").menu__link Форум
+                            li.menu__item
+                                a(href="#").menu__link Рыболовная карта
+                            li.menu__item
+                                a(href="#").menu__link О портале
+

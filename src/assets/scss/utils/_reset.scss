@@ -1,5 +1,6 @@
 body {
   margin: 0;
+  font-size: $base-font-size;
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -18,6 +19,11 @@ a {
 
 p {
   margin: 0;
+}
+
+span, i {
+  margin: 0;
+  padding: 0;
 }
 
 input,

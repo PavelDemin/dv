@@ -1,5 +1,6 @@
 @import "utils/vars";
 @import "utils/reset";
+@import "utils/libs";
 
 html {
   font-size: $base-font-size;
@@ -12,11 +13,6 @@ body {
 
 a {
   color: $base-font-color;
-}
-
-.container {
-  width: $content-width;
-  margin: 0 auto;
 }
 
 .btn {
