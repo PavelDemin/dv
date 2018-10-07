@@ -6,9 +6,7 @@
 }
 .composition {
   height: 39.9rem;
- //
   background: url("../image/header.jpg") no-repeat center top;
-
 }
 
 
@@ -73,7 +71,7 @@
   }
 }
 
-.nav-wrap {
+.nav-login {
   background-color: $background-header;
   height: 2.5rem;
   opacity: 0.7;
@@ -89,7 +87,7 @@
   height: 5rem;
 }
 
-.nav {
+.login {
   display: flex;
   font-size: 1.4rem;
   color: $white;
@@ -102,7 +100,7 @@
   &__user {
     color: $yellow;
   }
-  &__log {
+  &__link {
     color: $white;
     text-decoration: underline;
     &:hover {
@@ -113,52 +111,68 @@
 }
 
 .menu {
+  font-size: 2rem;
   &__list {
     line-height: 5rem;
-    &_list {
-      width: 100%;
-      display: inline-flex;
-      flex-wrap: nowrap;
-      align-items: center;
-      justify-content: left;
-      .menu__item {
-        border-right: 1px solid $border-right;
-        border-left: 1px solid $border-left;
-        & > * {
-          padding-right: 1.5rem;
-          padding-left: 1.5rem;
-        }
-        &:first-child { border-left: none;}
-        &:last-child {border-right: none;}
+    width: 100%;
+    display: inline-flex;
+    flex-wrap: nowrap;
+    align-items: center;
+    justify-content: left;
+  }
+  &__item {
+    border-right: 1px solid $border-right;
+    border-left: 1px solid $border-left;
+    & > * {
+      padding-right: 1.5rem;
+      padding-left: 1.5rem;
+    }
+    &:first-child { border-left: none;}
+    &:last-child {border-right: none;}
+    &:hover {
+       .menu-dropdown__list {
+        display: flex;
       }
     }
-    &_down {
-      // display: none;
-      width: 30rem;
-      display: block;
-      position: absolute;
-      background-color: $dark-blue;
-    }
-
   }
-
-  &__item {
-    position: relative;
-    font-size: 2rem;
-
-  }
-
   &__link {
     color: $white;
     display: block;
     transition: all 0.2s linear;
+
     cursor: pointer;
     &:hover {
       background-color: $menu-hover;
+
+    }
+  }
+  &-dropdown {
+
+    &__list {
+      padding-left: 0;
+      padding-right: 0;
+      width: 30rem;
+      display: none;
+      flex-direction: column;
+      position: absolute;
+      background-color: $dark-blue;
+
+    }
+    &__item {
+      border-bottom: 1px solid $border-left;
+    }
+    &__link {
+      padding-left: 1.5rem;
+      color: $white;
+      display: block;
+      transition: all 0.2s linear;
+
+      &:hover {
+        background-color: $menu-hover;
+      }
     }
 
+
   }
-
-
 }
 

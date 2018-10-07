@@ -19,39 +19,40 @@
                             input(type="text" id="search-text" name="search-text" placeholder="Поиск по сайту").search__input
                             button(type="submit").search__btn
     .row
-        .col-12.nav-wrap
+        .col-12.nav-login
             .container
                 .row
-                    .col-md-4.offset-md-8.nav
-                        span.nav__welcome Здравствуйте,
-                        span.nav__user &nbsp;Гость!
-                        a(href="#").nav__log Вход
-                        a(href="#").nav__log Регистрация
+                    .col-md-4.offset-md-8.login
+                        span.login__welcome Здравствуйте,
+                        span.login__user &nbsp;Гость!
+                        a(href="#").login__link Вход
+                        a(href="#").login__link Регистрация
     .row
         .col-12.menu-wrap
             .container
                 .row
-                    .col-12.menu.menu_top
-                        ul.menu__list.menu__list_list
-                            li.menu__item
-                                a(href="#").menu__link Главная
-                            li.menu__item
-                                a(href="#").menu__link Рыболовные отчеты
-                            li.menu__item
-                                a(href="#").menu__link Статьи
-                                ul.menu__list.menu__list_down
-                                    li.menu__item
-                                        a(href="#").menu__link Главная
-                                    li.menu__item
-                                        a(href="#").menu__link Рыболовные отчеты
-                                    li.menu__item
-                                        a(href="#").menu__link Статьи
-                            li.menu__item
-                                a(href="#").menu__link Видео
-                            li.menu__item
-                                a(href="#").menu__link Форум
-                            li.menu__item
-                                a(href="#").menu__link Рыболовная карта
-                            li.menu__item
-                                a(href="#").menu__link О портале
+                    .col-12
+                        nav.menu
+                            ul.menu__list
+                                li.menu__item
+                                    a(href="#").menu__link Главная
+                                li.menu__item
+                                    a(href="#").menu__link Рыболовные отчеты
+                                li.menu__item
+                                    a(href="#").menu__link Статьи
+                                    ul.menu-dropdown__list
+                                        li.menu-dropdown__item
+                                            a(href="#").menu-dropdown__link Главная
+                                        li.menu-dropdown__item
+                                            a(href="#").menu-dropdown__link Рыболовные отчеты
+                                        li.menu-dropdown__item
+                                            a(href="#").menu-dropdown__link Статьи
+                                li.menu__item
+                                    a(href="#").menu__link Видео
+                                li.menu__item
+                                    a(href="#").menu__link Форум
+                                li.menu__item
+                                    a(href="#").menu__link Рыболовная карта
+                                li.menu__item
+                                    a(href="#").menu__link О портале
 
