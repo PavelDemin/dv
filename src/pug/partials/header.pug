@@ -1,25 +1,26 @@
 .container-fluid.wrapper
-    header.row
+    .row
         .col-12.composition
             .container
-                .row.header
-                    .col-md.logo.header__item
-                        span.logo__image
-                            img(src="../assets/image/logo.png")
-                        span.logo__title Рыбалка в Хабаровском крае
-                    .col-md.social.header__item
-                        .social__item
-                            a(href="#").social__link
-                                i.icon-vkontakte
-                        .social__item
-                            a(href="#").social__link
-                                i.icon-whatsapp
-                    .col-md.header__item
-                        form(action="#" method="POST").search
-                            input(type="text" id="search-text" name="search-text" placeholder="Поиск по сайту").search__input
-                            button(type="submit").search__btn
+                .row
+                    header.header
+                        .col-md.logo.header__item
+                            span.logo__image
+                                img(src="../assets/image/logo.png")
+                            span.logo__title Рыбалка в Хабаровском крае
+                        .col-md.social.header__item
+                            .social__item
+                                a(href="#").social__link
+                                    i.icon-vkontakte
+                            .social__item
+                                a(href="#").social__link
+                                    i.icon-whatsapp
+                        .col-md-4.header__item
+                            form(action="#" method="POST").search
+                                input(type="text" id="search-text" name="search-text" placeholder="Поиск по сайту").search__input
+                                button(type="submit").search__btn
     .row
-        .col-12.nav-login
+        .col-12.login-wrap
             .container
                 .row
                     .col-md-4.offset-md-8.login
