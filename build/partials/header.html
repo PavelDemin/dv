@@ -1,29 +1,35 @@
 
 <div class="container-fluid wrapper">
-  <header class="row">
+  <div class="row">
     <div class="col-12 composition">
-      <div class="container">
-        <div class="row header">
-          <div class="col-md logo header__item"><span class="logo__image"><img src="../assets/image/logo.png"/></span><span class="logo__title">Рыбалка в Хабаровском крае</span></div>
-          <div class="col-md social header__item">
-            <div class="social__item"><a class="social__link" href="#"><i class="icon-vkontakte"></i></a></div>
-            <div class="social__item"><a class="social__link" href="#"><i class="icon-whatsapp"></i></a></div>
-          </div>
-          <div class="col-md header__item">
-            <form class="search" action="#" method="POST">
-              <input class="search__input" type="text" id="search-text" name="search-text" placeholder="Поиск по сайту"/>
-              <button class="search__btn" type="submit"></button>
-            </form>
+      <header class="header">
+        <div class="container">
+          <div class="row justify-content-between align-items-start">
+            <div class="col-md-3 col-sm-4 col-8 logo"><span class="logo__image"><a href="#"><img src="../assets/image/logo.png"/></a></span><span class="logo__title">Рыбалка в Хабаровском крае</span></div>
+            <div class="col-md-3 col-sm-3 col-4 offset-md-2">
+              <div class="social">
+                <div class="social__item"><a class="social__link" href="#"><i class="icon-vkontakte"></i></a></div>
+                <div class="social__item"><a class="social__link" href="#"><i class="icon-whatsapp"></i></a></div>
+              </div>
+            </div>
+            <div class="col-md-4 col-sm-5 col-0">
+              <form class="search" action="#" method="POST">
+                <input class="search__input" type="text" id="search-text" name="search-text" placeholder="Поиск по сайту"/>
+                <button class="search__btn" type="submit"></button>
+              </form>
+            </div>
           </div>
         </div>
-      </div>
+      </header>
     </div>
-  </header>
+  </div>
   <div class="row">
-    <div class="col-12 nav-login">
+    <div class="col-12 login-wrap">
       <div class="container">
-        <div class="row">
-          <div class="col-md-4 offset-md-8 login"><span class="login__welcome">Здравствуйте,</span><span class="login__user">&nbsp;Гость!</span><a class="login__link" href="#">Вход</a><a class="login__link" href="#">Регистрация</a></div>
+        <div class="row justify-content-end">
+          <div class="col-md-auto offset-md-8">
+            <div class="login"><span class="login__welcome">Здравствуйте,</span><span class="login__user">&nbsp;Гость!</span><a class="login__link" href="#">Войти</a><a class="login__link" href="#">Регистрация</a></div>
+          </div>
         </div>
       </div>
     </div>
@@ -32,22 +38,25 @@
     <div class="col-12 menu-wrap">
       <div class="container">
         <div class="row">
-          <div class="col-12">
+          <div class="col-md-auto">
+            <div class="menu-mobile"><span class="menu-mobile__item">
+                <button class="menu-mobile__icon"><span>Меню<i class="icon-menu"></i></span></button></span><span class="menu-mobile__item">               <a class="menu-mobile__link" href="#"><i class="icon-login"></i></a><a class="menu-mobile__link" href="#"><i class="icon-user"></i></a></span></div>
             <nav class="menu">
-              <ul class="menu__list">
-                <li class="menu__item"><a class="menu__link" href="#">Главная</a></li>
-                <li class="menu__item"><a class="menu__link" href="#">Рыболовные отчеты</a></li>
+              <ul class="menu__list menu__list-mobile">
+                <li class="menu__item"><a class="menu__link menu__link-active" href="#">Главная</a></li>
+                <li class="menu__item"><a class="menu__link" href="#">Форум</a></li>
                 <li class="menu__item"><a class="menu__link" href="#">Статьи</a>
-                  <ul class="menu-dropdown__list">
-                    <li class="menu-dropdown__item"><a class="menu-dropdown__link" href="#">Главная</a></li>
-                    <li class="menu-dropdown__item"><a class="menu-dropdown__link" href="#">Рыболовные отчеты</a></li>
-                    <li class="menu-dropdown__item"><a class="menu-dropdown__link" href="#">Статьи</a></li>
+                  <ul class="menu__list menu__list-dropdown">
+                    <li class="menu__item menu__item-dropdown"><a class="menu__link" href="#">Мушки</a></li>
+                    <li class="menu__item menu__item-dropdown"><a class="menu__link" href="#">Спиннинг</a></li>
+                    <li class="menu__item menu__item-dropdown"><a class="menu__link" href="#">Нахлыст</a></li>
                   </ul>
                 </li>
-                <li class="menu__item"><a class="menu__link" href="#">Видео</a></li>
-                <li class="menu__item"><a class="menu__link" href="#">Форум</a></li>
-                <li class="menu__item"><a class="menu__link" href="#">Рыболовная карта</a></li>
-                <li class="menu__item"><a class="menu__link" href="#">О портале</a></li>
+                <li class="menu__item"><a class="menu__link" href="#">Рыболовные отчеты</a></li>
+                <li class="menu__item menu__item-mobile-hide"><a class="menu__link" href="#">Карта</a></li>
+                <li class="menu__item menu__item-mobile-hide"><a class="menu__link" href="#">Видео</a></li>
+                <li class="menu__item menu__item-mobile-hide"><a class="menu__link" href="#">О портале</a></li>
+                <li class="menu__item menu__item-tablet menu__item-mobile-hide"><i class="icon-dot-3">           </i></li>
               </ul>
             </nav>
           </div>

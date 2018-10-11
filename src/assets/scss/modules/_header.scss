@@ -1,23 +1,17 @@
+@import "_menu";
+
 .wrapper {
  // padding-right: 0;
  // padding-left: 0;
   position: relative;
   margin: 0 auto;
 }
+.header {
+  margin-top: 1rem;
+}
 .composition {
   height: 39.9rem;
   background: url("../image/header.jpg") no-repeat center top;
-}
-
-
-.header {
-    width: 100%;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-   .header__item {
-    padding-top: 2rem;
-  }
 }
 
 .logo {
@@ -35,14 +29,14 @@
 .social {
   display: flex;
   font-size: 3rem;
+  justify-content: flex-end;
   &__item {
-
   }
   &__link {
     color: $dark-blue;
     transition: all .2s linear;
     &:hover {
-      color: lighten($dark-blue, 10%)
+      color: lighten($dark-blue, 30%)
     }
   }
 }
@@ -50,8 +44,10 @@
 .search {
  display: inline-flex;
  align-items: center;
+ justify-content: flex-end;
+ width: 100%;
  &__input {
-    width: 280px;
+    width: 100%;
     height: 40px;
     box-shadow: inset 1px 1px 1px rgba(0, 0, 0, 0.5);
     background-color: #ffffff;
@@ -61,7 +57,7 @@
     font-size: 1.4rem;
   }
   &__btn {
-    width: 4rem;
+    min-width: 4rem;
     height: 3.3rem;
     line-height: 3.3rem;
     background: url("../image/search.png") no-repeat center $dark-blue;
@@ -90,7 +86,6 @@
   display: flex;
   font-size: 1.4rem;
   color: $white;
-  line-height: 2.5rem;
   & > * {
     margin-right: 2rem;
     &:first-child {margin-right: 0;}
@@ -99,84 +94,32 @@
   &__user {
     color: $yellow;
   }
-  &__link {
-    color: $white;
-    text-decoration: underline;
-    &:hover {
-      text-decoration: none;
-      color: darken($white, 15%)
-    }
-  }
-}
-
-.menu-wrap {
-  background-color: $dark-blue;
-  height: 5rem;
-}
-
-.menu {
-  font-size: 2rem;
-  &__list {
-    line-height: 5rem;
-    width: 100%;
-    display: inline-flex;
-    flex-wrap: nowrap;
-    align-items: center;
-    justify-content: left;
-  }
-  &__item {
-    border-right: 1px solid $border-right;
-    border-left: 1px solid $border-left;
-    & > * {
-      padding-right: 1.5rem;
-      padding-left: 1.5rem;
-    }
-    &:first-child { border-left: none;}
-    &:last-child {border-right: none;}
-    &:hover {
-       .menu-dropdown__list {
-        display: flex;
-      }
-    }
+  &__text {
+   padding: 0 2px;
+    border-bottom: 1px solid $white;
   }
   &__link {
     color: $white;
-    display: block;
-    transition: all 0.2s linear;
-
-    cursor: pointer;
-    &:hover {
-      background-color: $menu-hover;
-
-    }
-  }
-  &-dropdown {
-
-    &__list {
-      padding-left: 0;
-      padding-right: 0;
-      width: 30rem;
-      display: none;
-      flex-direction: column;
-      position: absolute;
-      background-color: $dark-blue;
-      box-shadow: 2px 3px 12px 2px rgba(84,85,85,1);
-
-    }
-    &__item {
-      border-bottom: 1px solid $border-left;
-    }
-    &__link {
-      padding-left: 1.5rem;
-      color: $white;
+    &::after {
+      content: "";
+      width: 100%;
+      height: 0.2rem;
+      background-color: darken($white, 15%);
       display: block;
       transition: all 0.2s linear;
-
-      &:hover {
-        background-color: $menu-hover;
+      transform: translateY(-0.2rem) scale(0);
+      
+    }
+    &:hover {
+      color: darken($white, 15%);
+      &::after {
+        content: "";
+        transform: translateY(-0.2rem) scale(1);
       }
     }
-
-
   }
 }
+
+
+
+ 

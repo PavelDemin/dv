@@ -1,59 +1,75 @@
 .container-fluid.wrapper
     .row
         .col-12.composition
-            .container
-                .row
-                    header.header
-                        .col-md.logo.header__item
+            header.header
+                .container
+                    .row.justify-content-between.align-items-start
+                        .col-md-3.col-sm-4.col-8.logo
                             span.logo__image
-                                img(src="../assets/image/logo.png")
+                                a(href="#")
+                                    img(src="../assets/image/logo.png")
                             span.logo__title Рыбалка в Хабаровском крае
-                        .col-md.social.header__item
-                            .social__item
-                                a(href="#").social__link
-                                    i.icon-vkontakte
-                            .social__item
-                                a(href="#").social__link
-                                    i.icon-whatsapp
-                        .col-md-4.header__item
+                        .col-md-3.col-sm-3.col-4.offset-md-2
+                            .social
+                                .social__item
+                                    a(href="#").social__link
+                                        i.icon-vkontakte
+                                .social__item
+                                    a(href="#").social__link
+                                        i.icon-whatsapp
+                        .col-md-4.col-sm-5.col-0
                             form(action="#" method="POST").search
                                 input(type="text" id="search-text" name="search-text" placeholder="Поиск по сайту").search__input
                                 button(type="submit").search__btn
     .row
         .col-12.login-wrap
             .container
-                .row
-                    .col-md-4.offset-md-8.login
-                        span.login__welcome Здравствуйте,
-                        span.login__user &nbsp;Гость!
-                        a(href="#").login__link Вход
-                        a(href="#").login__link Регистрация
+                .row.justify-content-end
+                    .col-md-auto.offset-md-8
+                        .login
+                            span.login__welcome Здравствуйте,
+                            span.login__user &nbsp;Гость!
+                            a(href="#").login__link Войти
+                            a(href="#").login__link Регистрация
     .row
         .col-12.menu-wrap
             .container
                 .row
-                    .col-12
+                    .col-md-auto
+                        .menu-mobile
+                            span.menu-mobile__item
+                                button.menu-mobile__icon
+                                    span Меню
+                                        i.icon-menu
+                            span.menu-mobile__item                
+                                a(href="#").menu-mobile__link
+                                    i.icon-login
+                                a(href="#").menu-mobile__link
+                                    i.icon-user
                         nav.menu
-                            ul.menu__list
+                            ul.menu__list.menu__list-mobile
                                 li.menu__item
-                                    a(href="#").menu__link Главная
-                                li.menu__item
-                                    a(href="#").menu__link Рыболовные отчеты
-                                li.menu__item
-                                    a(href="#").menu__link Статьи
-                                    ul.menu-dropdown__list
-                                        li.menu-dropdown__item
-                                            a(href="#").menu-dropdown__link Главная
-                                        li.menu-dropdown__item
-                                            a(href="#").menu-dropdown__link Рыболовные отчеты
-                                        li.menu-dropdown__item
-                                            a(href="#").menu-dropdown__link Статьи
-                                li.menu__item
-                                    a(href="#").menu__link Видео
+                                    a(href="#").menu__link.menu__link-active Главная
                                 li.menu__item
                                     a(href="#").menu__link Форум
                                 li.menu__item
-                                    a(href="#").menu__link Рыболовная карта
+                                    a(href="#").menu__link Статьи
+                                    ul.menu__list.menu__list-dropdown
+                                        li.menu__item.menu__item-dropdown
+                                            a(href="#").menu__link Мушки
+                                        li.menu__item.menu__item-dropdown
+                                            a(href="#").menu__link Спиннинг
+                                        li.menu__item.menu__item-dropdown
+                                            a(href="#").menu__link Нахлыст
                                 li.menu__item
+                                    a(href="#").menu__link Рыболовные отчеты
+                                li.menu__item.menu__item-mobile-hide
+                                    a(href="#").menu__link Карта
+                                li.menu__item.menu__item-mobile-hide
+                                    a(href="#").menu__link Видео
+                                li.menu__item.menu__item-mobile-hide
                                     a(href="#").menu__link О портале
+                                li.menu__item.menu__item-tablet.menu__item-mobile-hide
+                                    i.icon-dot-3            
+
 
