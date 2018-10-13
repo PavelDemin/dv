@@ -33,9 +33,9 @@
 				display: none;
 			}
 			&-mobile {
-				&-open {
-					display: flex;
-				}
+			  &-open {
+				display: flex;
+			  }
 			}
 		}
 
@@ -57,7 +57,7 @@
 	
 }
 
-@media (max-width: $tablet-size) {
+/*@media (max-width: $tablet-size) and (min-width: $mobile-size) {
 	.menu {
 		&__item {
 			&:nth-last-child(-n+5) {border-right: none;}
@@ -76,4 +76,4 @@
 	}
 	
 	
-}	
+}	*/

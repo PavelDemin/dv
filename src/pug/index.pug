@@ -2,3 +2,30 @@ extends layout/default
 block variables
     - var title = 'Главная страница'
 block content
+  main.container
+    .row
+      .col-md-3
+        h3
+          a(href="#").section-title Последние статьи
+        article.block
+          header.block-header
+            .block__image
+            h2.block__title Снасти для ловли хариуса
+          .block__text Хариус - красивый обитатель многих рек Дальнего Востока, привлекает внимание рыболовов своей непредс...
+          a(href="#").block__link Читать далее...
+          footer.block-footer
+            .block-tag
+              ul.block-tag__list
+                li.block-tag__item
+                  a(href="#").block-tag__link Мушки
+                li.block-tag__item
+                  a(href="#").block-tag__link Хариус
+                li.block-tag__item
+                  a(href="#").block-tag__link Снасти
+
+      .col-md-6
+        h3
+          a(href="#").section-title Лучшие рыболовные отчеты
+      .col-md-3
+        h3
+          a(href="#").section-title Видео обзоры

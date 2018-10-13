@@ -48,8 +48,8 @@ a {
     line-height: 5rem;
     display: -ms-inline-flexbox;
     display: inline-flex;
-    -ms-flex-wrap: nowrap;
-        flex-wrap: nowrap;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
     -ms-flex-align: center;
         align-items: center;
     -ms-flex-pack: start;
@@ -63,6 +63,7 @@ a {
       background-color: #007cc3;
       box-shadow: 2px 3px 12px 2px #545555; }
   .menu__item {
+    background-color: #007cc3;
     display: block;
     border-right: 1px solid #016ba6;
     border-left: 1px solid #1992d7; }
@@ -122,10 +123,21 @@ a {
       transition: all .2s linear; }
       .menu-mobile__link:hover {
         color: #b3b3b3; }
+  .menu__close {
+    background-color: transparent;
+    border: 0;
+    font-size: 2rem;
+    display: none;
+    color: #007cc3;
+    position: absolute;
+    top: 3rem;
+    left: 18.5rem; }
+    .menu__close-open {
+      display: block; }
 
 .wrapper {
   position: relative;
-  margin: 0 auto; }
+  margin-bottom: 3rem; }
 
 .header {
   margin-top: 1rem; }
@@ -228,6 +240,21 @@ a {
         -webkit-transform: translateY(-0.2rem) scale(1);
                 transform: translateY(-0.2rem) scale(1); }
 
+.section-title {
+  font-size: 1.8rem;
+  color: #007cc3;
+  font-weight: 700;
+  padding-left: 0.5rem; }
+
+.block {
+  background-color: #f1f4f5;
+  border-radius: 0.5rem;
+  padding: 0.5rem;
+  font-size: 1.4rem; }
+  .block__title {
+    font-size: 1.6rem;
+    color: #007cc3; }
+
 @media (max-width: 575px) {
   .composition {
     height: 8.5rem;
@@ -267,12 +294,23 @@ a {
     display: -ms-flexbox;
     display: flex; } }
 
-@media (max-width: 767px) {
-  .menu__item:nth-last-child(-n+5) {
-    border-right: none; }
-  .menu__item-mobile-hide {
-    display: none; }
-  .menu__item-tablet {
-    border-left: none;
-    border-right: none;
-    display: block; } }
+/*@media (max-width: $tablet-size) and (min-width: $mobile-size) {
+	.menu {
+		&__item {
+			&:nth-last-child(-n+5) {border-right: none;}
+			&-mobile {
+				&-hide {
+					display: none;
+				}
+			}
+			&-tablet {
+				border-left: none;
+				border-right: none;
+				display: block;
+			}
+		}
+
+	}
+	
+	
+}	*/

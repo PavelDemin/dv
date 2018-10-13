@@ -1,0 +1,17 @@
+.section-title {
+  font-size: 1.8rem;
+  color: $dark-blue;
+  font-weight: 700;
+  padding-left: 0.5rem;
+}
+
+.block {
+  background-color: $block-bg;
+  border-radius: 0.5rem;
+  padding: 0.5rem;
+  font-size: 1.4rem;
+  &__title {
+    font-size: 1.6rem;
+    color: $dark-blue;
+  }
+}
