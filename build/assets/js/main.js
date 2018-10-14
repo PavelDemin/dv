@@ -32,11 +32,35 @@ $(document).ready(function(){
       });
     };
 
- 
+    let openSlideDesc = function() {
+        $('.slider__item').hover(function() {
+            $('.slider-dropdown__desc').fadeToggle(600);
+        });
+    };
+
+
     searchText();
     openMenuMobile();
     closeMenuMobile();
     //openMenuTablet();
+    openSlideDesc();
 
 
+});
+
+$('.slider__list').slick({
+    slidesToShow: 1,
+    slidesToScroll: 1,
+    //autoplay: true,
+    autoplaySpeed: 2000,
+   // dots: true,
+    infinite: true,
+    speed: 500,
+    fade: true,
+    cssEase: 'linear',
+    prevArrow: '.slider__nav-prev',
+    nextArrow: '.slider__nav-next',
+    customPaging: function(slider, i) {
+        return '<a class="slider__dot">';
+    }
 });

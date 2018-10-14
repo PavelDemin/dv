@@ -6,6 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE = edge"><![endif]-->
     <meta name="viewport" content="width=device-width,initial-scale=1">
     <meta name="keywords" content="">
+    <link rel="stylesheet" href="assets/libs/slick/slick.css">
     <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=PT+Sans:400,700&amp;amp;subset=cyrillic">
     <link rel="stylesheet" type="text/css" href="assets/libs/bootstrap/bootstrap-grid.min.css">
     <link rel="stylesheet" type="text/css" href="assets/css/main.css"><!--[if lt IE 9]>
@@ -83,12 +84,71 @@
     </div>
     <main class="container">
       <div class="row">
-        <div class="col-md-3">
+        <div class="col-md-3 col-sm-6 order-2">
           <h3><a class="section-title" href="#">Последние статьи</a></h3>
           <article class="block">
-            <header class="block-header">
-              <div class="block__image"></div>
-              <h2 class="block__title">Снасти для ловли хариуса</h2>
+            <header class="block__header"><a href="#"><img class="block__image" src="assets/image/upload/thumb.jpg"></a>
+              <h2 class="block__title"><a class="block__link" href="#">Снасти для ловли хариуса</a></h2>
+            </header>
+            <div class="block__text">Хариус - красивый обитатель многих рек Дальнего Востока, привлекает внимание рыболовов своей непредс...</div><a class="block__link" href="#">Читать далее...</a>
+            <footer class="block-footer">
+              <div class="block-tag">
+                <ul class="block-tag__list">
+                  <li class="block-tag__item"><a class="block-tag__link" href="#">Мушки</a></li>
+                  <li class="block-tag__item"><a class="block-tag__link" href="#">Хариус</a></li>
+                  <li class="block-tag__item"><a class="block-tag__link" href="#">Снасти</a></li>
+                </ul>
+              </div>
+            </footer>
+          </article>
+          <article class="block">
+            <header class="block__header"><a href="#"><img class="block__image" src="assets/image/upload/thumb.jpg"></a>
+              <h2 class="block__title"><a class="block__link" href="#">Снасти для ловли хариуса</a></h2>
+            </header>
+            <div class="block__text">Хариус - красивый обитатель многих рек Дальнего Востока, привлекает внимание рыболовов своей непредс...</div><a class="block__link" href="#">Читать далее...</a>
+            <footer class="block-footer">
+              <div class="block-tag">
+                <ul class="block-tag__list">
+                  <li class="block-tag__item"><a class="block-tag__link" href="#">Мушки</a></li>
+                  <li class="block-tag__item"><a class="block-tag__link" href="#">Хариус</a></li>
+                  <li class="block-tag__item"><a class="block-tag__link" href="#">Снасти</a></li>
+                </ul>
+              </div>
+            </footer>
+          </article>
+          <article class="block">
+            <header class="block__header"><a href="#"><img class="block__image" src="assets/image/upload/thumb.jpg"></a>
+              <h2 class="block__title"><a class="block__link" href="#">Снасти для ловли хариуса</a></h2>
+            </header>
+            <div class="block__text">Хариус - красивый обитатель многих рек Дальнего Востока, привлекает внимание рыболовов своей непредс...</div><a class="block__link" href="#">Читать далее...</a>
+            <footer class="block-footer">
+              <div class="block-tag">
+                <ul class="block-tag__list">
+                  <li class="block-tag__item"><a class="block-tag__link" href="#">Мушки</a></li>
+                  <li class="block-tag__item"><a class="block-tag__link" href="#">Хариус</a></li>
+                  <li class="block-tag__item"><a class="block-tag__link" href="#">Снасти</a></li>
+                </ul>
+              </div>
+            </footer>
+          </article>
+          <article class="block">
+            <header class="block__header"><a href="#"><img class="block__image" src="assets/image/upload/thumb.jpg"></a>
+              <h2 class="block__title"><a class="block__link" href="#">Снасти для ловли хариуса</a></h2>
+            </header>
+            <div class="block__text">Хариус - красивый обитатель многих рек Дальнего Востока, привлекает внимание рыболовов своей непредс...</div><a class="block__link" href="#">Читать далее...</a>
+            <footer class="block-footer">
+              <div class="block-tag">
+                <ul class="block-tag__list">
+                  <li class="block-tag__item"><a class="block-tag__link" href="#">Мушки</a></li>
+                  <li class="block-tag__item"><a class="block-tag__link" href="#">Хариус</a></li>
+                  <li class="block-tag__item"><a class="block-tag__link" href="#">Снасти</a></li>
+                </ul>
+              </div>
+            </footer>
+          </article>
+          <article class="block">
+            <header class="block__header"><a href="#"><img class="block__image" src="assets/image/upload/thumb.jpg"></a>
+              <h2 class="block__title"><a class="block__link" href="#">Снасти для ловли хариуса</a></h2>
             </header>
             <div class="block__text">Хариус - красивый обитатель многих рек Дальнего Востока, привлекает внимание рыболовов своей непредс...</div><a class="block__link" href="#">Читать далее...</a>
             <footer class="block-footer">
@@ -102,15 +162,44 @@
             </footer>
           </article>
         </div>
-        <div class="col-md-6">
+        <div class="col-md-6 order-md-2 col-sm-12 order-1">
           <h3><a class="section-title" href="#">Лучшие рыболовные отчеты</a></h3>
+          <div class="slider">
+            <div class="slider__nav slider__nav-prev"><i class="icon-angle-circled-left"></i></div>
+            <div class="slider__nav slider__nav-next"><i class="icon-angle-circled-right"></i></div>
+            <div class="slider__dots">  </div>
+            <ul class="slider__list">
+              <li class="slider__item"><img class="slider__image" src="assets/image/upload/1.jpg"><a class="slider-dropdown" href="#">
+                  <h2 class="slider-dropdown__title">Хариус</h2><span class="slider-dropdown__desc">Хариус - красивый обитатель многих рек Дальнего Востока, привлекает внимание рыболовов своей непредс...       </span></a></li>
+              <li class="slider__item"><img class="slider__image" src="assets/image/upload/2.jpg"><a class="slider-dropdown" href="#">
+                  <h2 class="slider-dropdown__title">Хариусvyjujuj</h2><span class="slider-dropdown__desc">Был соблазн сегодня за грибами сгонять. Но с грибами в это лето что то не очень, поэтому решил ноги не бить ради десятка дикоросов - а поехал на рыбалку.  Воды много, берега мало. Приходится       </span></a></li>
+              <li class="slider__item"><img class="slider__image" src="assets/image/upload/3.jpg"><a class="slider-dropdown" href="#">
+                  <h2 class="slider-dropdown__title">Петропавловка</h2><span class="slider-dropdown__desc">Спустя неделю решил опять под скалу рвануть. Да и погода сделала небольшой перерывчик)) 6:30 утра-шагаю по берегу...вижу мой товарищ что то тащит (с ночевой сидел), и завидев меня кричит: расчехляй подсак! Ну, думаю      </span></a></li>
+            </ul>
+          </div>
         </div>
-        <div class="col-md-3">
+        <div class="col-md-3 col-sm-6 order-3">
           <h3><a class="section-title" href="#">Видео обзоры</a></h3>
+          <article class="block">
+            <header class="block__header block__header-video"><a href="#"><img class="block__image" src="assets/image/upload/4.jpg"></a>
+              <h2 class="block__title"><a class="block__link" href="#">Снасти для ловли хариуса</a></h2>
+            </header>
+          </article>
+          <article class="block">
+            <header class="block__header block__header-video"><a href="#"><img class="block__image" src="assets/image/upload/5.jpg"></a>
+              <h2 class="block__title"><a class="block__link" href="#">Снасти для ловли хариуса</a></h2>
+            </header>
+          </article>
+          <article class="block">
+            <header class="block__header block__header-video"><a href="#"><img class="block__image" src="assets/image/upload/6.jpg"></a>
+              <h2 class="block__title"><a class="block__link" href="#">Снасти для ловли хариуса</a></h2>
+            </header>
+          </article>
         </div>
       </div>
     </main>
     <script src="assets/libs/jquery/jquery-3.3.1.min.js"></script>
+    <script src="assets/libs/slick/slick.min.js">                                      </script>
     <script src="assets/js/main.js"></script>
   </body>
 </html>

@@ -27,7 +27,7 @@ var path = {
         js:    'src/assets/js/main.js',
         scss: 'src/assets/scss/main.scss',
         css: 'src/assets/css/*.css',
-        img:   'src/assets/image/*.*',
+        img:   'src/assets/image/**/*.*',
         libs:  'src/assets/libs/**/*.*',
         fonts: 'src/assets/fonts/**/*.*'
     },
@@ -37,7 +37,7 @@ var path = {
         js:    'src/assets/js/main.js',
         scss: 'src/assets/scss/**/*.scss',
         css: 'src/assets/css/*.css',
-        img:   'src/assets/image/*.*',
+        img:   'src/assets/image/**/*.*',
         libs:  'src/assets/libs/**/*.*',
         fonts: 'src/assets/fonts/**/*.*'
     },
@@ -48,6 +48,7 @@ var config = {
     server: {
         baseDir: './build'
     },
+	browser: 'chrome',
     notify: false
 };
 

@@ -57,7 +57,7 @@
 	
 }
 
-/*@media (max-width: $tablet-size) and (min-width: $mobile-size) {
+@media (max-width: $tablet-size) and (min-width: $mobile-size) {
 	.menu {
 		&__item {
 			&:nth-last-child(-n+5) {border-right: none;}
@@ -76,4 +76,4 @@
 	}
 	
 	
-}	*/
+}	
