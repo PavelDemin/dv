@@ -2,7 +2,6 @@
 @import "utils/reset";
 @import "utils/libs";
 
-
 html {
   font-size: $base-font-size;
 }
@@ -16,12 +15,9 @@ a {
   color: $base-font-color;
 }
 
-.btn {
-  display: inline-block;
-  background-color: transparent;
-  border-radius: 5px;
-}
-
 @import "modules/header";
 @import "modules/content";
-@import "utils/media";
+@import "modules/slider";
+@import "modules/block";
+@import "modules/footer";
+@import "modules/media";

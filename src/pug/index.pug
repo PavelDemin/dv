@@ -2,66 +2,38 @@ extends layout/default
 block variables
     - var title = "Главная страница"
 block styles
-     link(rel="stylesheet" href="assets/libs/slick/slick.css")
+    link(rel="stylesheet" href="assets/libs/slick/slick.css")
 block content
     main.container
         .row
             .col-md-3.col-sm-6.order-2
+               include widgets/widget-articles
+            .col-md-6.order-md-2.col-sm-12.order-1
+                include partials/slider
                 h3
-                    a(href="#").section-title Последние статьи
-                each val in [1,2,3,4,5]
+                    a(href="#").section-title Последние отчеты
+                each val in [7,8,9,10,11]    
                     article.block
                         header.block__header
                             a(href="#")
-                                img(src="assets/image/upload/thumb.jpg").block__image
+                                picture
+                                    source(media="(max-width: 991px)", srcset="https://via.placeholder.com/880x588")
+                                    img(src="assets/image/upload/"+val+".jpg").block__image
+                            .block-info
+                                .block-info__date 31 Июля, 2017
+                                .block-info__view
+                                    i.icon-eye
+                                    span.block-info__text 12588
+                                .block-info__comment
+                                    a(href="#").block-info__link
+                                        i.icon-comment
+                                        span.block-info__text 12588
                             h2.block__title
-                                a(href="#").block__link Снасти для ловли хариуса
-                        .block__text Хариус - красивый обитатель многих рек Дальнего Востока, привлекает внимание рыболовов своей непредс...
-                        a(href="#").block__link Читать далее...
-                        footer.block-footer
-                            .block-tag
-                                ul.block-tag__list
-                                    li.block-tag__item
-                                        a(href="#").block-tag__link Мушки
-                                    li.block-tag__item
-                                        a(href="#").block-tag__link Хариус
-                                    li.block-tag__item
-                                        a(href="#").block-tag__link Снасти
-            .col-md-6.order-md-2.col-sm-12.order-1
-                h3
-                    a(href="#").section-title Лучшие рыболовные отчеты
-                .slider
-                    .slider__nav.slider__nav-prev
-                        i.icon-angle-circled-left
-                    .slider__nav.slider__nav-next
-                        i.icon-angle-circled-right
-                    .slider__dots   
-                    ul.slider__list
-                        li.slider__item
-                            img(src="assets/image/upload/1.jpg").slider__image
-                            a(href="#").slider-dropdown
-                                h2.slider-dropdown__title Хариус
-                                span.slider-dropdown__desc Хариус - красивый обитатель многих рек Дальнего Востока, привлекает внимание рыболовов своей непредс...       
-                        li.slider__item
-                            img(src="assets/image/upload/2.jpg").slider__image
-                            a(href="#").slider-dropdown
-                                h2.slider-dropdown__title Хариусvyjujuj
-                                span.slider-dropdown__desc Был соблазн сегодня за грибами сгонять. Но с грибами в это лето что то не очень, поэтому решил ноги не бить ради десятка дикоросов - а поехал на рыбалку.  Воды много, берега мало. Приходится       
-                        li.slider__item
-                            img(src="assets/image/upload/3.jpg").slider__image
-                            a(href="#").slider-dropdown
-                                h2.slider-dropdown__title Петропавловка
-                                span.slider-dropdown__desc Спустя неделю решил опять под скалу рвануть. Да и погода сделала небольшой перерывчик)) 6:30 утра-шагаю по берегу...вижу мой товарищ что то тащит (с ночевой сидел), и завидев меня кричит: расчехляй подсак! Ну, думаю      
+                                a(href="#").block__link Рыбалка на протоке Берендинская
+                            .block__text.block__text-indent Любое путешествие (большое или малое) начинается с планирования: знакомство с местом, финансирование мероприятия, цели и намерения, подбор напарников и многое другое. Со Швецией я достаточно хорошо знаком, с 2010 года я...
+                        a(href="#").block__link.block__link-btn Читать дальше...
             .col-md-3.col-sm-6.order-3
-                h3
-                    a(href="#").section-title Видео обзоры
-                each val in [4,5,6]
-                    article.block
-                        header.block__header.block__header-video
-                            a(href="#")
-                                img(src="assets/image/upload/"+val+".jpg").block__image
-                            h2.block__title
-                                a(href="#").block__link Снасти для ловли хариуса
-                        
+                include widgets/widget-video
+                include widgets/widget-tags-cloud
 block script
-     script(src="assets/libs/slick/slick.min.js")                                       
+    script(src="assets/libs/slick/slick.min.js")
