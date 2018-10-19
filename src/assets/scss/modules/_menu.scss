@@ -6,9 +6,7 @@
 .menu {
   font-size: 1.8rem;
   &__list {
-    line-height: 5rem;
     z-index: 3;
-    //width: 100%;
     display: inline-flex;
     flex-wrap: wrap;
     align-items: center;
@@ -19,20 +17,19 @@
       flex-direction: column;
       position: absolute;
       background-color: $dark-blue;
-      box-shadow: 2px 3px 12px 2px rgba(84,85,85,1);
+      box-shadow: 1px 2px 4px 1px rgba(95,95,95,0.55);
     }
-
   }
   &__item {
+    line-height: 5rem;
     background-color: $dark-blue;
     display: block;
     border-right: 1px solid $border-right;
     border-left: 1px solid $border-left;
     &:first-child { border-left: none;}
     &:nth-last-child(-n+2) {border-right: none;}
-    
     &-dropdown {
-
+      line-height: 3rem;
       align-self: flex-start;
       width: 100%;
       border-bottom: 1px solid $border-left;
@@ -80,7 +77,6 @@
       line-height: 30px;
       &:hover {
         color: darken($white, 30%)
-
       }
     }
 
@@ -108,6 +104,29 @@
     left: 18.5rem;
     &-open {
       display: block;
+    }
+  }
+  &-footer {
+    font-size: 1.4rem;
+    line-height: 2.2rem;
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    &__list {
+      display: flex;
+      flex-direction: column;
+      margin-right: 1.5rem;
+      &:last-child {
+        margin-right: 0;
+      }
+    }
+    &__link {
+      color: rgba(72, 72, 72, 0.8);
+      text-shadow: rgb(233, 244, 249) 1px 1px 1px;
+      transition: all 0.2s ease;
+      &:hover {
+        color: $link-hover;
+      }
     }
   }
 }
