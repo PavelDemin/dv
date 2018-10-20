@@ -40,6 +40,7 @@
 			width: 100%;
 			border-right: 0;
 			border-left: 0;
+			line-height: 3rem;
 		}
 		&__link {
 			padding-left: 2rem;
@@ -52,6 +53,14 @@
 	.block{
 			&-info {
 				display: none;
+			}
+			&-list {
+				&__item {
+					width: 100%;
+				}
+			}
+			&__title {
+				clear: both;
 			}
 		}
 	

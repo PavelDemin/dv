@@ -1,0 +1,65 @@
+extends layout/default
+block variables
+    - var title = "Рыболовные статьи"
+block content
+    main.container
+        .row
+            .col-md-3
+                include widgets/widget-menu-articles
+                include widgets/widget-articles
+            .col-md-9
+                .bread-crumb
+                    span.bread-crumb__item
+                        a(href="").bread-crumb__link Статьи
+                    span.bread-crumb__item
+                        a(href="").bread-crumb__link Рыболовные снасти
+                    span.bread-crumb__item Снасти для ловли хариуса         
+                article.block
+                    header.block__header
+                        a(href="#")
+                            img(src="assets/image/upload/19.jpg").block__image
+                        h1.block__title.block__title-post Снасти для ловли хариуса
+                        .block-info
+                            .block-info__date Добавлено:&nbsp;
+                                span 31 Июля, 2017
+                            .block-info__view
+                                i.icon-eye
+                                span.block-info__text 12588
+                            .block-info__comment
+                                a(href="#").block-info__link
+                                    i.icon-comment
+                                    span.block-info__text 12588
+                        .block__text.block__text-indent Lorem ipsum dolor sit amet, consectetur adipisicing elit. Porro maiores nihil architecto. Ratione quasi excepturi quidem dicta eos laudantium voluptatum facilis velit distinctio deserunt, totam accusantium eligendi ipsam eum doloremque mollitia ducimus consequatur soluta veniam animi sit, culpa rerum ex provident adipisci? 
+                            p Veniam maxime, consectetur placeat minima officiis culpa nisi earum odio. Quae nihil sequi accusamus voluptates enim, repudiandae iste, ut reprehenderit voluptatem minima perferendis facere rerum quos quod aliquid, delectus impedit mollitia. Culpa animi in fugiat inventore sit consequatur, necessitatibus veritatis a nisi. 
+                            p Architecto molestiae deleniti odit sed possimus, accusantium illum, sint repudiandae voluptates, voluptatibus debitis a saepe vitae facere perferendis porro rerum? Alias tempora laudantium blanditiis ducimus officiis dolorum placeat, necessitatibus ex consectetur aspernatur unde ratione reiciendis nobis recusandae dolorem itaque, consequuntur neque! Optio atque dolorem esse, porro iste rem non aspernatur nobis perspiciatis iure fuga! Placeat repellat qui exercitationem. Repellat omnis at labore laborum sunt doloribus maiores vel, molestias dolore eius facilis iste iusto, praesentium modi. A atque expedita, culpa beatae minus cum accusamus, saepe temporibus blanditiis fuga reprehenderit animi debitis veritatis quasi fugit ad odio laboriosam ipsa officiis quod ducimus. Ut libero ratione numquam.
+                            p Delectus in provident et fugit labore fugiat. Perspiciatis, ratione sint nesciunt obcaecati laboriosam aspernatur molestiae laudantium sunt velit sit quia magnam cum impedit illo suscipit quos adipisci ut maxime! Autem obcaecati repellat fugit voluptate at fuga odit ipsam. Similique neque explicabo veniam quibusdam doloremque autem quas reiciendis doloribus! Eius qui dolor esse quibusdam consequuntur, recusandae, quo deleniti, libero aliquid repellat corporis illo provident repellendus ratione voluptatibus error molestiae maxime. Reiciendis nemo dolorum explicabo, quasi recusandae, voluptatum debitis, ipsum natus inventore iusto dolore optio ab. Ipsum officia mollitia neque! Quo ad, obcaecati explicabo sunt neque necessitatibus adipisci voluptatum, doloremque minima autem iure perferendis, velit placeat. 
+                            p Officiis veritatis obcaecati eveniet alias quod minus eum, aut magnam pariatur fuga mollitia autem neque quos libero assumenda excepturi! Ut delectus distinctio alias molestiae quisquam odio unde accusamus in eaque et suscipit, aperiam obcaecati aliquid hic molestias quaerat dolorum, velit nihil impedit qui inventore incidunt pariatur illo. Iusto tenetur, libero alias. Eum placeat doloremque incidunt praesentium nemo quasi optio corporis hic, inventore dolorum voluptas quis consequatur recusandae eligendi soluta ratione omnis tempora perspiciatis aliquid. Eligendi molestias, quam tempora quasi placeat, velit beatae libero animi, accusantium rerum repudiandae praesentium nostrum voluptatibus quae sit eius rem a exercitationem aliquid repellendus nihil. Tempora totam voluptates atque veritatis aspernatur laborum dolor, distinctio maxime ipsum enim omnis architecto? Rem quas dolor reprehenderit earum, optio repudiandae, debitis porro iusto corporis maiores, cupiditate quos vitae in soluta distinctio laborum excepturi, facilis impedit rerum officia deserunt. Voluptatem debitis veniam non provident aliquid eius quis, tenetur saepe recusandae inventore numquam mollitia quas laborum earum neque doloribus, dignissimos ipsa minima facere! 
+                            p Animi libero nostrum maiores, eum, neque quae aut, quo sit illum error hic mollitia est a odit nemo doloribus ab debitis omnis qui fuga ipsa modi quisquam eius aspernatur. Fugit sapiente, fugiat, ducimus omnis dicta aspernatur eum suscipit incidunt ut obcaecati a sequi, consequatur quos! Esse, veniam.
+                    
+                    footer.block-footer
+                        .block-tag
+                            ul.block-tag__list
+                                li.block-tag__item
+                                    a(href="#").block-tag__link Мушки
+                                li.block-tag__item
+                                    a(href="#").block-tag__link Хариус
+                                li.block-tag__item
+                                    a(href="#").block-tag__link Снасти
+                        .block__share Поделиться статьей:
+                        .ya-share2(data-services='collections,vkontakte,facebook,odnoklassniki,moimir,whatsapp')
+                h3
+                    a(href="#").section-title Похожие статьи
+                .block-list.block-list-related
+                    each val in [13,14,15,16]
+                        .block-list__item
+                            article.block
+                                header.block__header
+                                    a(href="#")
+                                        img(src="assets/image/upload/thumb.jpg").block__image
+                                    h2.block__title
+                                        a(href="#").block__link Снасти для ловли хариуса
+                                    .block__text Хариус - красивый обитатель многих рек Дальнего Востока, привлекает внимание рыболовов своей непредс...
+                                a(href="#").block__link Читать далее...
+block script
+    script(src="//yastatic.net/es5-shims/0.0.2/es5-shims.min.js")
+    script(src="//yastatic.net/share2/share.js")

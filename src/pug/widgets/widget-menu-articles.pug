@@ -1,0 +1,12 @@
+h3
+    a(href="#").section-title Меню разделов
+.block
+    nav.sub-nav
+        ul.sub-nav__list
+            li.sub-nav__item.sub-nav__item-active
+                span.sub-nav__link Рыболовные снасти
+                span.sub-nav__count 8
+            each val in ['Карпфишинг','Спиннинг','Нахлыст','Фидер','Поплавочная удочка','Своими руками']
+                li.sub-nav__item
+                    a(href="").sub-nav__link=val
+                    span.sub-nav__count 5

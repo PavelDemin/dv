@@ -1,0 +1,46 @@
+extends layout/default
+block variables
+    - var title = "Рыболовные статьи"
+block content
+    main.container
+        .row
+            .col-md-3
+                include widgets/widget-menu-articles
+                include widgets/widget-articles
+            .col-md-9
+                h3
+                    a(href="#").section-title Последние статьи
+                .block-list
+                    each val in [13,14,15,16,17,18,19]
+                        .block-list__item
+                            article.block
+                                header.block__header
+                                    .block__lable Экспидиция
+                                    a(href="#")
+                                        img(src="assets/image/upload/"+val+".jpg").block__image
+                                    h2.block__title
+                                        a(href="#").block__link Снасти для ловли хариуса
+                                    .block__text Хариус - красивый обитатель многих рек Дальнего Востока, привлекает внимание рыболовов своей непредс...
+                                .block-info
+                                        .block-info__date 31 Июля, 2017
+                                        .block-info__view
+                                            i.icon-eye
+                                            span.block-info__text 12588
+                                        .block-info__comment
+                                            a(href="#").block-info__link
+                                                i.icon-comment
+                                                span.block-info__text 12588
+                                footer.block-footer
+                                    .block-tag
+                                        ul.block-tag__list
+                                            li.block-tag__item
+                                                a(href="#").block-tag__link Мушки
+                                            li.block-tag__item
+                                                a(href="#").block-tag__link Хариус
+                                            li.block-tag__item
+                                                a(href="#").block-tag__link Снасти
+                                    .block__share Поделиться статьей:
+                                    .ya-share2(data-services='collections,vkontakte,facebook,odnoklassniki,moimir,whatsapp')
+block script
+    script(src="//yastatic.net/es5-shims/0.0.2/es5-shims.min.js")
+    script(src="//yastatic.net/share2/share.js")
