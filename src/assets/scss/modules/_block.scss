@@ -197,9 +197,40 @@
     height: 3rem;
     line-height: 3rem;
     padding: 0 0.7rem;
-    background-color: #48788f;
     color: $white;
     border-radius: 0.5rem;
+    background-color: #2F4F4F;
+    &-SeaGreen {
+      background-color: #2E8B57;
+    }
+    &-YellowGreen {
+      background-color: #9ACD32;
+    }
+    &-Olive {
+      background-color: #808000;
+    }
+    &-IndianRed {
+      background-color: #CD5C5C;
+    }
+    &-FireBrick {
+      background-color: #B22222;
+    }
+    &-HotPink {
+      background-color: #FF69B4;
+    }
+    &-DarkOrange {
+      background-color: #FF8C00;
+    }
+    &-Maroon {
+      background-color: #800000;
+    }
+    &-Green {
+      background-color: #008000;
+    }
+    &-default {
+      background-color: #2F4F4F;
+    }
+
   }
   &__share {
     color: $icon-gray;

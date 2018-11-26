@@ -268,6 +268,41 @@ a {
   padding-left: 0.5rem;
   margin-bottom: 2rem; }
 
+.pagination {
+  text-align: center;
+  font-size: 14px;
+  border-top: 1px solid #eeeeee;
+  padding: 20px 0; }
+
+.pagination a {
+  display: inline-block;
+  vertical-align: top;
+  height: 31px;
+  line-height: 31px;
+  padding: 0 12px;
+  background: #f1f4f5;
+  border-radius: 10px;
+  text-decoration: none;
+  color: #484848;
+  margin: 0 2px; }
+
+.pagination a:hover {
+  background: #80cefb;
+  color: #fff; }
+
+.pagination li {
+  display: inline-block;
+  vertical-align: top;
+  height: 31px;
+  line-height: 31px;
+  padding: 0 12px;
+  border-radius: 10px;
+  margin: 0 2px; }
+
+.pagination-active {
+  background: #80cefb;
+  color: #fff; }
+
 .sub-nav__list {
   display: -ms-flexbox;
   display: flex;
@@ -548,9 +583,29 @@ a {
     height: 3rem;
     line-height: 3rem;
     padding: 0 0.7rem;
-    background-color: #48788f;
     color: #fff;
-    border-radius: 0.5rem; }
+    border-radius: 0.5rem;
+    background-color: #2F4F4F; }
+    .block__lable-SeaGreen {
+      background-color: #2E8B57; }
+    .block__lable-YellowGreen {
+      background-color: #9ACD32; }
+    .block__lable-Olive {
+      background-color: #808000; }
+    .block__lable-IndianRed {
+      background-color: #CD5C5C; }
+    .block__lable-FireBrick {
+      background-color: #B22222; }
+    .block__lable-HotPink {
+      background-color: #FF69B4; }
+    .block__lable-DarkOrange {
+      background-color: #FF8C00; }
+    .block__lable-Maroon {
+      background-color: #800000; }
+    .block__lable-Green {
+      background-color: #008000; }
+    .block__lable-default {
+      background-color: #2F4F4F; }
   .block__share {
     color: #8fa3ba; }
 
